@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0b0f1d;
+    color: #eee;
+}
+
+/* Header styles */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+}
+
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 4rem;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+
+.navbar a:hover {
+    color: rgb(255, 0, 123);
+}
+
+/* About section styles */
+#about {
+    padding: 40px 9%;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Projects section styles */
+#projects {
+    padding: 40px 9%;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#projects h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 4px solid #6a5acd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.project-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+}
+
+/* Contact section styles */
+#contact {
+    padding: 40px 9%;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #about,
+    #projects,
+    #contact {
+        padding: 20px;
+    }
+
+    #about h1,
+    #projects h1,
+    #contact h1 {
+        font-size: 28px;
+    }
+
+    .project-item h2 {
+        font-size: 20px;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar a {
+        margin-left: 2rem;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-detail h3 {
+        font-size: 32px;
+    }
+
+    .home-detail p {
+        font-size: 14px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+    }
+
+    .btn-box a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    img {
+        height: 300px;
+        /* Adjust the image height for mobile */
+    }
+
+    .about-content h1 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .service-item h2 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+
+    .portfolio h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 769px) {
+    .home {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-detail h3 {
+        font-size: 40px;
+    }
+
+    .home-detail p {
+        font-size: 16px;
+    }
+
+    img {
+        height: 550px;
+        /* Original image height for desktop */
+    }
+
+    .about-content h1 {
+        font-size: 48px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .service-item h2 {
+        font-size: 24px;
+    }
+
+    .service-item p {
+        font-size: 16px;
+    }
+
+    .portfolio h1 {
+        font-size: 36px;
+    }
+}
