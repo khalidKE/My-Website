@@ -96,27 +96,6 @@ button:hover {
     background-color: #555;
 }
 
-/* Responsive styling for mobile */
-@media screen and (max-width: 768px) {
-    #services {
-        padding: 20px;
-        /* Reduce padding for smaller screens */
-    }
-
-    h1 {
-        font-size: 28px;
-        /* Reduce font size for smaller screens */
-    }
-
-    .service-item h2 {
-        font-size: 20px;
-    }
-
-    .service-item p {
-        font-size: 14px;
-    }
-}
-
 h1 {
     color: #333;
     font-size: 36px;
@@ -143,3 +122,87 @@ footer {
     background-color: #0b0f1d;
     color: #eee;
 }   
+
+/* Media query for devices with a width up to 768px (tablets and phones) */
+@media (max-width: 768px) {
+
+    /* Adjust the padding of the header */
+    header {
+        padding: 1rem 5%;
+        flex-direction: column;
+        /* Stack logo and navbar vertically */
+    }
+
+    .logo a {
+        font-size: 18px;
+        /* Slightly smaller font */
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+        /* Reduce space between links */
+        font-size: 14px;
+        /* Smaller font size for mobile */
+    }
+
+    #services {
+        padding: 20px;
+        /* Reduce padding */
+        max-width: 90%;
+        /* Reduce the maximum width */
+    }
+
+    .service-item h2 {
+        font-size: 20px;
+        /* Slightly smaller font for headings */
+    }
+
+    .service-item p {
+        font-size: 14px;
+        /* Smaller font for paragraph text */
+    }
+
+    /* Make buttons smaller */
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Media query for devices with a width up to 480px (phones) */
+@media (max-width: 480px) {
+
+    /* Stack navbar links vertically */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        /* Add space between stacked links */
+    }
+
+    /* Make the service container width smaller */
+    #services {
+        padding: 15px;
+        max-width: 100%;
+        /* Take full width */
+    }
+
+    /* Further adjust font sizes for smaller phones */
+    .service-item h2 {
+        font-size: 18px;
+    }
+
+    .service-item p {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
