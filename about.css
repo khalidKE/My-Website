@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
-    outline: none;
-    border: none;
 }
 
 body {
@@ -36,198 +34,10 @@ header {
     color: rgb(255, 0, 123);
 }
 
-.logo a {
+.logo {
     font-size: 20px;
-    text-decoration: none;
     color: #eee;
     font-weight: 700;
-    cursor: pointer;
-}
-
-.home {
-    position: relative;
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10% 0;
-}
-
-.home .home-detail {
-    max-width: 600px;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.home-detail h3 {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 1.2;
-}
-
-.home-detail h3:nth-child(1),
-.home-detail h3:nth-child(2),
-.home-detail p {
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-}
-
-.home-detail h3:nth-child(1) {
-    animation-delay: 0.3s;
-}
-
-.home-detail h3:nth-child(2) {
-    font-size: 23px;
-    color: rgb(255, 0, 123);
-    font-weight: 800;
-    margin-bottom: 30px;
-    animation-delay: 0.6s;
-}
-
-.home-detail p {
-    font-size: 16px;
-    position: relative;
-    margin: 20px 0 40px;
-    animation-delay: 0.9s;
-}
-
-@keyframes fadeInUpButtons {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.btn-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    width: 345px;
-    position: relative;
-}
-
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    text-decoration: none;
-    color: black;
-    background: rebeccapurple;
-    border: 2px solid rebeccapurple;
-    height: 100%;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 1;
-    opacity: 0;
-    animation: fadeInUpButtons 1s ease forwards;
-}
-
-.btn-box a:nth-child(1) {
-    animation-delay: 1.2s;
-}
-
-.btn-box a:nth-child(2) {
-    animation-delay: 1.5s;
-}
-
-.btn-box a:hover {
-    color: red;
-    transform: scale(1.1);
-    transition: 0.3s ease;
-}
-
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: rebeccapurple;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: rgb(219, 0, 0);
-}
-
-.socail {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.socail a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid rebeccapurple;
-    border-radius: 50%;
-    background: transparent;
-    text-decoration: none;
-    color: rebeccapurple;
-    z-index: 1;
-    transition: .5s;
-}
-
-.socail a:hover {
-    color: #0b0f1d;
-    background-color: rebeccapurple;
-}
-
-img {
-    height: 550px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    animation: 1.5s ease Zoom;
-}
-
-@keyframes Zoom {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes slideRight {
-    100% {
-        width: 0;
-    }
-}
-
-.logo a::before,
-.home-detail h3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    animation: slideRight 1s ease forwards;
-    animation-delay: .4s;
 }
 
 .about {
@@ -275,90 +85,23 @@ footer {
     color: #eee;
 }
 
-/* update */
-
-.about-content {
-    padding: 10px;
-    /* Add padding for smaller screens */
-}
-
-.btn-box {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow buttons to wrap on small screens */
-    justify-content: center;
-    /* Center buttons */
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
     header {
         padding: 1rem 5%;
-        /* Decrease header padding */
     }
 
     .navbar a {
         margin-left: 2rem;
-        /* Reduce spacing between navbar items */
         font-size: 14px;
-        /* Smaller font for mobile */
-    }
-
-    .home-detail h3 {
-        font-size: 30px;
-        /* Smaller heading */
-    }
-
-    .home-detail p {
-        font-size: 14px;
-        /* Smaller paragraph text */
-    }
-
-    .btn-box {
-        flex-direction: column;
-        /* Stack buttons vertically */
-        width: 100%;
-        /* Full width for buttons */
-    }
-
-    .btn-box a {
-        width: 100%;
-        /* Full width for button links */
-        margin-bottom: 10px;
-        /* Space between buttons */
-    }
-
-    .socail {
-        bottom: 20px;
-        /* Adjust social media icons' position */
-        width: 120px;
-        /* Decrease width */
-    }
-
-    .socail a {
-        width: 35px;
-        /* Smaller social media icons */
-        height: 35px;
-        /* Smaller social media icons */
-    }
-
-    img {
-        height: 300px;
-        /* Adjust image height */
-        right: 0;
-        /* Keep image in place */
-        bottom: 10%;
-        /* Adjust position */
     }
 
     .about-content h1 {
         font-size: 36px;
-        /* Smaller heading */
     }
 
     .about-content p {
         font-size: 16px;
-        /* Smaller paragraph text */
     }
 }
 
@@ -366,32 +109,15 @@ footer {
 @media (max-width: 480px) {
     header {
         flex-direction: column;
-        /* Stack header items */
         align-items: flex-start;
-        /* Align items to the start */
     }
 
     .navbar a {
         margin-left: 0;
-        /* Remove left margin */
         margin-bottom: 5rem;
-        /* Add space between items */
-    }
-
-    .home {
-        flex-direction: column;
-        /* Stack home content vertically */
-        padding: 0 5%;
-        /* Adjust padding */
-    }
-
-    .home img {
-        height: 200px;
-        /* Further adjust image height */
     }
 
     .about {
         padding: 0 5%;
-        /* Adjust padding */
     }
 }
