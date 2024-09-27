@@ -446,9 +446,8 @@ footer {
     }
 
     .home-detail h3 {
-        font-size: 32px;
+        font-size: clamp(24px, 5vw, 40px);
     }
-
     .home-detail p {
         font-size: 14px;
     }
@@ -527,5 +526,56 @@ footer {
 
     .portfolio h1 {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar a {
+        font-size: 14px;
+        margin-left: 1rem;
+    }
+
+    .home-detail h3 {
+        font-size: 28px;
+    }
+
+    .home-detail p {
+        font-size: 12px;
+    }
+
+    .btn-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .service-item h2 {
+        font-size: 18px;
+    }
+
+    .portfolio h1 {
+        font-size: 24px;
+    }
+
+    .project h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .home {
+        height: 70vh;
+    }
+
+    .home-detail h3 {
+        font-size: 34px;
+    }
+
+    .btn-box {
+        width: 80%;
+        justify-content: center;
     }
 }
