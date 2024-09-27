@@ -184,21 +184,115 @@ form button:hover {
 .contact-info a:hover {
     text-decoration: underline;
 }
-/* Responsive Design */
-@media only screen and (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .profile-pic {
-        width: 100px;
-        /* Adjust profile picture size on smaller screens */
-    }
-}
 footer {
     text-align: center;
     padding: 20px 0;
     background-color: #0b0f1d;
     color: #eee;
+}
+
+/* Responsive adjustments for tablets and phones (up to 768px width) */
+@media (max-width: 768px) {
+
+    /* Adjust navigation menu */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        /* Stack menu items */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+
+    /* Profile picture size adjustment */
+    .profile-pic {
+        width: 120px;
+        /* Reduce image size */
+    }
+
+    /* General container adjustments */
+    .container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    /* Form width and layout adjustments */
+    form {
+        padding: 0 10px;
+    }
+
+    /* Headings adjustments */
+    h1 {
+        font-size: 32px;
+        /* Reduce heading size */
+    }
+
+    .contact-info p,
+    .contact-info h2 {
+        font-size: 16px;
+        /* Adjust contact info font size */
+    }
+
+    /* Button adjustments */
+    form button {
+        font-size: 14px;
+        /* Smaller buttons for mobile */
+        padding: 8px;
+    }
+}
+
+/* Responsive adjustments for small phones (up to 480px width) */
+@media (max-width: 480px) {
+
+    /* Stack header items */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        /* Add space between stacked links */
+        font-size: 14px;
+        /* Smaller text */
+    }
+
+    .profile-pic {
+        width: 100px;
+        /* Even smaller profile pic */
+    }
+
+    /* Form adjustments for smaller phones */
+    form input,
+    form textarea {
+        padding: 8px;
+        font-size: 14px;
+        /* Smaller input fields */
+    }
+
+    /* Adjust button size */
+    form button {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .contact-info p,
+    .contact-info h2 {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        /* Reduce footer text size */
+    }
 }
